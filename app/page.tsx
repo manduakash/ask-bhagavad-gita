@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useState, useRef, useEffect } from 'react';
 
 // API Response Interfaces matching latest backend payload
@@ -180,7 +181,7 @@ export default function BhagavadGita() {
                 भगवद् गीता
               </div>
               <h1 className="text-lg sm:text-xl font-serif font-bold tracking-wide text-stone-900">
-                BHAGAVAD GITA
+                ASK BHAGAVAD GITA
               </h1>
             </div>
           </div>
@@ -203,10 +204,7 @@ export default function BhagavadGita() {
 
               {/* Peacock feather core visual */}
               <div className="w-24 h-24 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-6 border border-amber-200/40 shadow-inner">
-                <svg className="w-14 h-14 text-amber-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.283 8.283 0 013 4.8 8.285 8.285 0 003-4.8 8.283 8.283 0 012.962-2.386z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21V9.6" />
-                </svg>
+                <Image src="/feather.jpg" alt="feather" width={200} height={100} className='rounded-full' />
               </div>
 
               <h2 className="text-xl sm:text-2xl font-serif font-medium text-stone-900 mb-3">
